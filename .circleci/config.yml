@@ -1,0 +1,9 @@
+version: 2
+jobs:
+ build:
+   machine: true
+   steps:
+     - checkout
+    #  - run: docker login --username $DOCKER_USER --password $DOCKER_PASS
+     - run: docker build -t chfanghr/docker-opencv-arm:latest .
+    #  - run: docker push chfanghr/docker-opencv-arm:latest     
