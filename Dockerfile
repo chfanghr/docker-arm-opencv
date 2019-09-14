@@ -1,6 +1,6 @@
 FROM multiarch/debian-debootstrap:armhf-buster
 
-#COPY sources.list /etc/apt/
+# COPY sources.list /etc/apt/
 
 RUN apt-get update \
     && apt-get install -y \

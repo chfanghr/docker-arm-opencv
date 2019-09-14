@@ -4,6 +4,7 @@ jobs:
    machine: true
    steps:
      - checkout
+     - run: docker run --rm --privileged multiarch/qemu-user-static:register
     #  - run: docker login --username $DOCKER_USER --password $DOCKER_PASS
      - run: docker build -t chfanghr/docker-opencv-arm:latest .
     #  - run: docker push chfanghr/docker-opencv-arm:latest     
